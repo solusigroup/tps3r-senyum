@@ -15,7 +15,7 @@
     <div class="stat-card">
         <div class="stat-content">
             <p>Total Sampah</p>
-            <h3>{{ number_format($totalSampah, 1) }} m³</h3>
+            <h3>{{ number_format($totalSampah, 1) }} kg</h3>
             <p class="stat-sub">Bulan ini</p>
         </div>
         <div class="stat-icon blue">
@@ -83,7 +83,7 @@
                     <tr>
                         <td>{{ $item->tanggal->format('d/m/Y') }}</td>
                         <td style="font-weight: 600;">{{ $item->wilayah }}</td>
-                        <td>{{ $item->volume }} m³</td>
+                        <td>{{ $item->volume }} kg</td>
                         <td>{{ $item->nama_petugas_display }}</td>
                     </tr>
                     @empty
